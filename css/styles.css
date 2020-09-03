@@ -219,6 +219,12 @@ address {
 .team {
 	display: flex;
 }
+.team .item {
+ width: calc((100% - 90px)/4;
+}
+.team .item:not(:last-child) {
+	margin-right: 30px; 
+}
 
 .team .name {
 	color: var(--primary-text-color);
