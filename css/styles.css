@@ -220,12 +220,15 @@ address {
 	display: flex;
 }
 .team .item {
- width: calc((100% - 90px)/4;
+	width: calc((100% - 90px) / 4);
+	margin-bottom: 154px;
 }
 .team .item:not(:last-child) {
-	margin-right: 30px; 
+	margin-right: 30px;
 }
-
+.team-section {
+	background-color: var(--title-background-color);
+}
 .team .name {
 	color: var(--primary-text-color);
 	font-weight: 500;
@@ -238,13 +241,18 @@ address {
 	line-height: 1.9;
 }
 /* Footer */
-
+.footer-container {
+	background-color: var(--footer-background-color);
+	min-height: 220px;
+}
 .footer-nav {
 	background-color: var(--footer-background-color);
 	color: var(--primary-white-color);
 	font-style: normal;
 	font-size: 14px;
 	line-height: 1.71;
+	margin-top: 60px;
+	margin-left: 215px;
 }
 .footer-contacts {
 	background-color: var(--footer-background-color);
@@ -253,27 +261,48 @@ address {
 	line-height: 1.71;
 	text-decoration: none;
 }
-.footer-join {
+.footer.logo {
+	margin-top: 60px;
+	margin-left: 215px;
+}
+
+/* .footer-join {
 	background-color: var(--footer-background-color);
 	color: var(--primary-white-color);
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 1.14;
 	text-transform: uppercase;
-}
+} */
 
 /* Стили для портфолио */
+.button.title {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+
 .projects .button {
 	background-color: var(--title-background-color);
 	color: var(--primary-text-color);
 }
 .projects .title:hover,
 .projects .title:focus {
-	color: var(--accent-color);
+	background-color: var(--accent-color);
 }
 .projects .title.current {
 	background-color: var(--accent-color);
 	color: var(--primary-white-color);
+}
+.section {
+	display: flex;
+	flex-wrap: wrap;
+}
+.section {
+	margin: -15px;
+}
+.section .li {
+	margin: 15px;
 }
 .section .title-list {
 	color: var(--primary-text-color);
