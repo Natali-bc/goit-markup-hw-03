@@ -130,7 +130,7 @@ address {
 }
 
 /* Hero */
-.hero {
+.hero .container {
 	text-align: center;
 	padding-top: 200px;
 	padding-bottom: 280px;
@@ -221,18 +221,24 @@ address {
 .team .item {
 	width: calc((100% - 90px) / 4);
 	margin-bottom: 154px;
+	text-align: center;
 }
 .team .item:not(:last-child) {
 	margin-right: 30px;
 }
-.team-section {
+
+.team-section .container {
 	background-color: var(--title-background-color);
+	margin-bottom: 94 px;
 }
+
 .team .name {
 	color: var(--primary-text-color);
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 1.19;
+	padding-top: 30px;
+	padding-bottom: 10px;
 }
 .team .profession {
 	color: var(--title-text-color);
@@ -242,7 +248,7 @@ address {
 
 /* Footer */
 
-.footer-container {
+.footer.container {
 	background-color: var(--footer-background-color);
 	min-height: 220px;
 }
@@ -309,15 +315,13 @@ ul.projects {
 .portfolio-section {
 	display: flex;
 	flex-wrap: wrap;
-	margin: -15px;
 	padding-bottom: 94px;
 }
-
-.portfolio-container {
-	margin-bottom: 94 px;
+.portfolio-section {
+	margin: -15px;
 }
-.team-container {
-	margin-bottom: 94 px;
+.portfolio-section .container {
+	/* margin-bottom: 94 px; */
 }
 .portfolio-section .item {
 	margin: 15px;
